@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Homework</title>
+        <meta name="description" content="kanker">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="icon" href="ico.jpg" type="image/gif" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./js/app.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>SARS-CoV-2 World Statistics Map</h1>
+        </header>
+        <div class="content">
+            <div class="stats">
+                <div class="tableWrap">
+                    <div class="infected"><p id="inf" class="counter"></p></div>
+                    <div class="progress" id="bar"></div>
+                    <table id="info">
+                        <thead>
+                                <td>Country</td>
+                                <td>Cases</td>
+                                <td>Recovered</td>
+                                <td>Deaths</td>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="map">
+                <object id="data" class="world" data="maps/world.svg" type="image/svg+xml">
+                </object>
+            </div>
+        </div>
+    </body>
+</html>
+
